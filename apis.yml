@@ -1,17 +1,33 @@
 aid: mitra-chem
 name: Mitra Chem
-description: 'Mitra Chem is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Mitra Chem is an AI-enabled innovator and manufacturer of battery and critical
+  materials for energy, AI infrastructure and defense applications, founded in 2021 and
+  headquartered in Mountain View, California. Its first commercial product is iron-based
+  lithium iron phosphate (LFP) and lithium manganese iron phosphate (LMFP) cathode active
+  material produced for Western battery cell makers and energy-storage OEMs as a non-China
+  supply source. The company operates The Foundry, an instrumented shared pilot manufacturing
+  facility spanning wet chemistry, hydrometallurgy, particle sizing, drying and heat treatment,
+  and runs an internal full-stack AI platform of physics-based models, digital twins and
+  engineering co-pilots used to compress materials scale-up cost and timelines. The AI platform
+  is internal tooling for Mitra Chem''s own manufacturing operations; it is not sold or exposed
+  as a software product, and the company publishes no public API, developer portal, SDK or
+  machine-readable interface.'
 url: https://raw.githubusercontent.com/api-evangelist/mitra-chem/refs/heads/main/apis.yml
+image: https://www.mitrachem.com/assets/og-image.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-25'
 modified: '2026-08-25'
 tags:
 - Company
+- Battery Materials
+- Advanced Manufacturing
+- Energy Storage
+- Chemicals
+- Electric Vehicles
+- Critical Minerals
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,41 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mitra-chem-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/mitra-chem_stock/
+  url: https://www.mitrachem.com/
+- type: Blog
+  url: https://www.mitrachem.com/news
+- type: PrivacyPolicy
+  url: https://www.mitrachem.com/privacy-policy-cookie-notice
+- type: Contact
+  url: mailto:info@mitrachem.com
+- type: Careers
+  url: https://www.mitrachem.com/join-us
+- type: LinkedIn
+  url: https://www.linkedin.com/company/mitrachem/
+- type: LLMsTxt
+  url: llms/mitra-chem-llms.txt
+x-enrichment:
+  date: '2026-08-25'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Mitra Chem manufactures physical lithium iron phosphate cathode active material; the
+    "AI Platform" it markets is internal tooling for its own foundry, and www.mitrachem.com
+    serves only seven marketing pages with no developer, docs or login surface at all.
+  evidence:
+  - url: https://www.mitrachem.com/openapi.json
+    status: 404
+  - url: https://www.mitrachem.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.mitrachem.com/
+    status: 0
+  - url: https://www.mitrachem.com/platform
+    status: 200
+  checked: '2026-08-25'

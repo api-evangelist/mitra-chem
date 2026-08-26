@@ -1,0 +1,34 @@
+generated: '2026-08-25'
+method: probed
+source: https://www.mitrachem.com/.well-known/
+note: >-
+  Every /.well-known/ path probed on the only host Mitra Chem operates
+  (www.mitrachem.com) returned HTTP 404 with the site's HTML not-found page. No
+  well-known document is served, so NO WellKnown or SecurityTxt pointer is emitted
+  in apis.yml — this file records a verified absence, not a presence. No api.*,
+  docs.* or developers.* subdomain resolves for mitrachem.com, so there is no
+  second host to probe.
+hosts:
+- host: www.mitrachem.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
