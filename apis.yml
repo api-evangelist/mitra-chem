@@ -13,6 +13,17 @@ description: 'Mitra Chem is an AI-enabled innovator and manufacturer of battery 
   as a software product, and the company publishes no public API, developer portal, SDK or
   machine-readable interface.'
 url: https://raw.githubusercontent.com/api-evangelist/mitra-chem/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://www.mitrachem.com/assets/og-image.png
 x-type: company
 x-source: harvest:secondary-market
